@@ -13,7 +13,7 @@ class NemoRetrieverExtraction(FlowFileTransform):
         version = '2.0.0'
         description = 'Extracts structured Markdown and metadata using NVIDIA NeMo Retriever.'
         tags = ['nvidia', 'nemo', 'ocr', 'ai', 'agentic']
-        dependencies = ['nv-ingest-client']
+        dependencies = ['nv_ingest_client']
 
     def __init__(self, **kwargs):
         self.NIM_HOST = PropertyDescriptor(
